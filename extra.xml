@@ -20,5 +20,4 @@
     <project path="vendor/xiaomi/daisy" name="xiaomi-msm8953-devs/proprietary_vendor_xiaomi_daisy" remote="my-github" />
     <project path="vendor/fingerprint/opensource/interfaces" name="xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces" remote="my-github" revision="lineage-21" />
     <project path="vendor/extra" name="TheGamerKing561/android_vendor_extra" remote="my-github" revision="crdroid-11" clone-depth="100" />
-    <project path="vendor/pixel_clocks" name="Positron-B/android_vendor_pixel_clocks" remote="my-github" />
 </manifest>
