@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="my-github"
+            fetch="https://github.com"
+            revision="lineage-22.2" />
+
+    <!-- device -->
+    <project path="device/xiaomi/msm8953-common" name="TheGamerKing561/android_device_xiaomi_msm8953-common" remote="my-github" clone-depth="100" />
+    <project path="device/xiaomi/daisy" name="TheGamerKing561/android_device_xiaomi_daisy" remote="my-github" clone-depth="100" />
+
+    <!-- hardware -->
+    <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" clone-depth="100" />
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" clone-depth="100" />
+
+    <!-- kernel-->
+    <project path="kernel/xiaomi/msm8953" name="TheGamerKing561/android_kernel_xiaomi_msm8953" remote="my-github" clone-depth="50" />
+
+    <!-- vendor -->
+    <project path="vendor/xiaomi/msm8953-common" name="xiaomi-msm8953-devs/proprietary_vendor_xiaomi_msm8953-common" remote="my-github" />
+    <project path="vendor/xiaomi/daisy" name="xiaomi-msm8953-devs/proprietary_vendor_xiaomi_daisy" remote="my-github" />
+    <project path="vendor/fingerprint/opensource/interfaces" name="xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces" remote="my-github" revision="lineage-21" />
+    <project path="vendor/extra" name="TheGamerKing561/android_vendor_extra" remote="my-github" clone-depth="100" />
+    <project path="vendor/pixel_clocks" name="Positron-B/android_vendor_pixel_clocks" remote="my-github" />
+</manifest>
