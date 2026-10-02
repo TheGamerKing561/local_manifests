@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<!-- hardware -->
+	<remove-project name="LineageOS/android_hardware_qcom_audio" />
+	<project path="hardware/qcom-caf/msm8996/audio" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="lineage-22.2-caf-msm8996" />
+	<remove-project name="LineageOS/android_hardware_qcom_display" />
+	<project path="hardware/qcom-caf/msm8996/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="lineage-22.2-caf-msm8996" />
+	<remove-project name="LineageOS/android_hardware_qcom_media" />
+	<project path="hardware/qcom-caf/msm8996/media" name="LineageOS/android_hardware_qcom_media" remote="github" revision="lineage-22.2-caf-msm8996" />
+    <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" clone-depth="100" />
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" clone-depth="100" />
+	
+	<!-- device -->
+	<project path="device/xiaomi/msm8953-common" name="ximi-daisy/android_device_xiaomi_msm8953-common" remote="github" revision="16.2" />
+	<project path="device/xiaomi/daisy" name="ximi-daisy/android_device_xiaomi_daisy" remote="github" revision="16.2" />
+
+	<!-- vendor -->
+	<project path="vendor/xiaomi/msm8953-common" name="ximi-daisy/proprietary_vendor_xiaomi_msm8953-common" remote="github" revision="16.2" />
+	<project path="vendor/xiaomi/daisy" name="ximi-daisy/proprietary_vendor_xiaomi_daisy" remote="github" revision="16" />
+	<project path="vendor/fingerprint/opensource/interfaces" name="ximi-daisy/android_vendor_fingerprint_opensource_interfaces" remote="github" revision="lineage-21" />
+	<!-- needed source patches for Android 16 QPR2 to boot on daisy with 4.9 kernel -->
+    <!-- huge thanks to backslashxx for the patches!! without him, this wouldn't have been possible -->
+    <!-- don't forget to do `export APPLY_LEGACY_KERNEL_PATCHES=true` before `source build/envsetup.sh` -->
+    <project path="vendor/extra" name="TheGamerKing561/android_vendor_extra-daisy" remote="github" clone-depth="100" revision="16.2" />
+
+    <!-- after doing `export APPLY_LEGACY_KERNEL_PATCHES=true` and `source build/envsetup.sh` -->
+    <!-- with the vendor/extra above, `rm -rf vendor/extra` then clone the vendor/extra below -->
+    <!-- and do `export APPLY_PATCHES=true` then `source build/envsetup.sh` to apply the extra patches, and start building. -->
+    <!-- project path="vendor/extra" name="TheGamerKing561/android_vendor_extra" remote="github" clone-depth="100" revision="lineage-23.2" / -->
+
+    <project path="vendor/pixel_clocks" name="Positron-B/android_vendor_pixel_clocks" remote="github" />
+
+	<!-- kernel -->
+	<project path="kernel/xiaomi/msm8953" name="ximi-daisy/android_kernel_xiaomi_msm8953" remote="github" revision="lineage-23.2" clone-depth="50" />
+</manifest>
