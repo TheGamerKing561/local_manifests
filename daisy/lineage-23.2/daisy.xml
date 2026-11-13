@@ -19,7 +19,7 @@
 	<!-- needed source patches for Android 16 QPR2 to boot on daisy with 4.9 kernel -->
     <!-- huge thanks to backslashxx for the patches!! without him, this wouldn't have been possible -->
     <!-- don't forget to do `export APPLY_LEGACY_KERNEL_PATCHES=true` before `source build/envsetup.sh` -->
-    <project path="vendor/extra" name="TheGamerKing561/android_vendor_extra-daisy" remote="github" clone-depth="100" revision="16.2" />
+    <project path="vendor/extra" name="TheGamerKing561/android_vendor_extra-daisy" remote="github" clone-depth="100" />
 
     <!-- after doing `export APPLY_LEGACY_KERNEL_PATCHES=true` and `source build/envsetup.sh` -->
     <!-- with the vendor/extra above, `rm -rf vendor/extra` then clone the vendor/extra below -->
